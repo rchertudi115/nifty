@@ -1,0 +1,206 @@
+@color1: rgb(111,92,59);
+@color2: rgb(113, 84, 115);
+@color3: rgb(219, 197, 46);
+
+@lightColor: rgb(240,240,239);
+@darkColor: rgb(65, 38, 54);
+
+@headingFont: "Varela", Arial, Helvetica, sans-serif;
+@normalFont: serif;
+@fontSize: 16px;
+@fontColor: #000;
+
+// MOBILE STYLESHEET
+
+body {
+	padding: 0px;
+    
+}
+
+nav {
+    .style-left {
+        float: left;
+        border-top-width: 2px;
+        border-top-style: inset;
+        border-top-color: #FFF;
+        margin-top: 70px;
+        border-bottom-width: 2px;
+        border-bottom-style: outset;
+        border-bottom-color: #FFF;
+        width: 200px;
+    }
+    .style-right {
+        float: right;
+        border-top-width: 2px;
+        border-top-style: inset;
+        border-top-color: #FFF;
+        margin-top: 70px;
+        border-bottom-width: 2px;
+        border-bottom-style: outset;
+        border-bottom-color: #FFF;
+        width: 220px;
+    }
+    li {
+        list-style-type: none;
+        font-family: Varela, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: relative;
+        text-transform: uppercase;
+        display: inline;
+        a {
+            color: @darkColor;
+            font-size: 1em;
+            text-decoration: none;
+            padding: .5em;
+            width: 100%;
+            transition: all 0.3s ease-in-out 0s;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+    }
+}
+
+main {
+    h1 {
+        font-family: @headingFont;
+        color: @darkColor;
+        font-size: 2.5em;
+        padding: 5% 0;
+        text-align: center;
+	    padding-left: 15px;
+    }
+    
+     h2 {
+         font-family: @headingFont;
+         font-size: 2.5em;
+         color: @color3;
+         display: inline-block;
+         position: relative;
+         text-align: center;
+         text-align: center;
+	     padding-left: 15px;
+    }
+
+    h3 {
+        padding-top: 5%;
+        text-align: center;
+	    padding-left: 15px;
+        font-family: @headingFont;
+        font-size: 1.25em; 
+        color: @darkColor;
+    }
+    h4 {
+        padding-bottom: 5%;
+        color: @color3;
+        font-size: 4em; 
+        font-family: @headingFont;
+        line-height: 1.5em;
+        text-shadow: black 2px 2px;
+    }
+    p {
+	   padding: 0 15px;
+    }
+    a {
+        color: @color2;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    ul {
+        padding-left: 2em;
+       
+        li {
+            list-style-image: url("../images/compass-bullet.png");
+            margin-top: 10px;
+        }
+    }
+    .main-content {
+        background-image: url("../images/nifty-map.png");
+        background-repeat: repeat;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8% 0px;
+    }
+    .main-img {
+        margin-top: 5%;
+    }
+    .main-ul {
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .main-img {
+        margin-top: 20%;
+        padding-left: 8%;
+    }
+    .container-fluid {
+ 	  padding: 0px
+    }
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 3%;
+    background-color: #482D3C;
+    color: #B07995;
+    font: .75em;
+    .column-left {
+	padding-left: 3%;
+    }
+    .column-right {
+        padding-right: 3%;
+    }
+   .social {
+	   float: left;
+    }
+    .social a {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        transition: all 0.3s ease-in-out 0s;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+        
+    }
+    .social a:link, .social a:visited {
+        color: 	#B07995;
+    }
+    .social a:hover, .social a:active {
+        color: 	#FFF;
+    }
+    .copyright {
+        float: right;
+    	text-align: right;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    .copyright p {
+        color: #B07995;
+        text-align: right;
+        font-size: 0.75em;
+    }
+}
+
+// TABLET STYLESHEET
+
+@media screen and (min-width: 481px) {
+
+    h1 {
+     font-size: 2em;
+    }
+    
+    h4 {
+        font-size: 6em; 
+    }
+    h2 {
+        font-size: 4em; 
+    }
+}
+// DESKTOP STYLESHEET
+
+@media screen and (min-width: 1025px) {
+
+}
